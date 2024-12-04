@@ -1,21 +1,22 @@
-root {
-    --color1:
+:root {
+    --color1: #B4D0E6;
+    --color-button: #0061FE;
 }
 
 html {
     text-transform: capitalize;
 }
 
-
+/* header setting */
 .container-header {
-    height: 100px;
-    background-color: aquamarine;
+    height: 50px;
+
 
 }
 
 .flex {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 
 }
 
@@ -26,9 +27,66 @@ html {
 .logo {}
 
 .container-right {
-    justify-content: flex-end;
+    display: flex;
+
 }
 
 
-/* main */
-main {}
+.container-header {
+    justify-content: space-between;
+}
+
+.set-button {
+    padding: 19x;
+    background-color: white;
+    border: 0;
+
+}
+
+.blue-button {
+    background-color: var(--color-button);
+    width: 60px;
+    border-radius: 10%;
+    color: white;
+}
+
+
+/* main setting */
+main {
+    display: flex;
+    height: 400px;
+    background-color: var(--color1);
+    padding-left: 200px;
+    padding-right: 200px;
+    flex-direction: column;
+}
+
+.main-title {
+    padding: 1%;
+    text-align: center;
+    font-size: large;
+}
+
+.container-main-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-img-200 {
+    height: 200px;
+    width: 200px;
+}
+
+.img1-flex-basis {
+    flex-basis: 60%;
+}
+
+.container-main-1.container-80 {
+    flex-direction: column;
+}
+
+
+/* .img1 {
+    height: 100px;
+    width: 100px;
+} */
