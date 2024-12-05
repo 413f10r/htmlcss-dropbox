@@ -9,7 +9,11 @@ html {
 
 /* header setting */
 .container-header {
+    position: fixed;
     height: 50px;
+    width: 90%;
+    background-color: white;
+
 
 
 }
@@ -18,10 +22,6 @@ html {
     display: flex;
     /* align-items: center; */
 
-}
-
-.container-left {
-    display: flex;
 }
 
 .logo {}
@@ -34,6 +34,7 @@ html {
 
 .container-header {
     justify-content: space-between;
+
 }
 
 .set-button {
@@ -53,40 +54,70 @@ html {
 
 /* main setting */
 main {
-    display: flex;
+
+
     height: 400px;
     background-color: var(--color1);
-    padding-left: 200px;
+    padding-left: 125px;
     padding-right: 200px;
-    flex-direction: column;
+
+
 }
 
 .main-title {
     padding: 1%;
     text-align: center;
     font-size: large;
+    font-family: sans-serif;
+}
+
+.container-flex {
+    margin-top: 20px;
+}
+
+.container-img-100 {
+    height: 300px;
+    width: 300px;
 }
 
 .container-main-1 {
+    height: 300px;
+    width: 300px;
+}
+
+.blue-button-2 {
+    background-color: var(--color-button);
+    color: white;
+    padding: 2%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.arrow {
+    padding: 25%;
+    color: black;
+}
+
+.setting-arrow {
+    padding: 5%;
+    margin-top: 5%;
+
+    height: 15px;
+    width: 15px;
+}
+
+/* tab */
+
+.tab-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+
 }
 
-.container-img-200 {
-    height: 200px;
+.tab {
     width: 200px;
+    height: 500px;
+    border: solid lightgray;
+    margin-top: 20px;
 }
-
-.img1-flex-basis {
-    flex-basis: 60%;
-}
-
-.container-main-1.container-80 {
-    flex-direction: column;
-}
-
-
-/* .img1 {
-    height: 100px;
-    width: 100px;
-} */
